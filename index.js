@@ -10,6 +10,8 @@ app.register(static, {
   prefix: '/assets/'
 })
 
+app.get('*', (_, reply) => reply.sendFile('index.html'))
+
 app.listen(PORT, (err, addr) => {
   if (err) {
     console.error(err)
