@@ -1,8 +1,9 @@
 import { div, h2 } from '@hyperapp/html'
+import Fade from '../Transitions/Fade'
 
 const Portfolio = (actions, state) => () =>
-  div([
-    h2('Portfolio Page')
+  Fade([
+    h2({ key: 'port' }, 'Portfolio Page')
   ])
 
 export default Portfolio

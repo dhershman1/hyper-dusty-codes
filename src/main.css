@@ -120,6 +120,42 @@ footer {
 }
 /* END Nav Styles */
 
+/* Transitions */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate {
+  animation-duration: 0.3s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.animate--enter {
+  animation-name: fadeIn;
+}
+
+.animate--exit {
+  animation-name: fadeOut;
+}
+/* END Transitions */
+
 /* Media Queries */
 @media (max-width: 40rem) {
   .wrapper {

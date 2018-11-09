@@ -4,7 +4,8 @@ import views from './views'
 import './main.css'
 
 const state = {
-  location: location.state
+  location: location.state,
+  transitioning: false
 }
 
 const actions = {

@@ -7,6 +7,8 @@
     "@hyperapp/fx": "0.7.0",
     "@hyperapp/html": "1.1.1",
     "@hyperapp/router": "0.7.1",
+    "@hyperapp/transitions": "1.0.2",
+    "classcat": "^3.2.3",
     "fastify": "1.13.0",
     "fastify-static": "0.14.0",
     "hyperapp": "1.2.9"
