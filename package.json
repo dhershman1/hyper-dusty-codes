@@ -1,0 +1,54 @@
+{
+  "name": "hyper-dusty-codes",
+  "version": "1.0.0",
+  "description": "A hyperapp version of the dusty codes website",
+  "main": "index.js",
+  "dependencies": {
+    "@hyperapp/fx": "0.7.0",
+    "@hyperapp/html": "1.1.1",
+    "@hyperapp/router": "0.7.1",
+    "fastify": "1.13.0",
+    "fastify-static": "0.14.0",
+    "hyperapp": "1.2.9"
+  },
+  "devDependencies": {
+    "chokidar": "2.0.4",
+    "node-dev": "3.1.3",
+    "npm-run-all": "4.1.3",
+    "rollup": "0.67.0",
+    "rollup-plugin-buble": "0.19.4",
+    "rollup-plugin-livereload": "0.6.0",
+    "rollup-plugin-node-resolve": "3.4.0",
+    "rollup-plugin-postcss": "1.6.2",
+    "rollup-plugin-terser": "3.0.0",
+    "standard": "12.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "dist/*",
+      "docs.js"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev:server": "node-dev index.js",
+    "dev": "npm-run-all --parallel watch dev:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhershman1/hyper-dusty-codes.git"
+  },
+  "keywords": [
+    "hyperapp",
+    "portfolio",
+    "rebuild"
+  ],
+  "author": "Dustin Hershman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhershman1/hyper-dusty-codes/issues"
+  },
+  "homepage": "https://github.com/dhershman1/hyper-dusty-codes#readme"
+}
