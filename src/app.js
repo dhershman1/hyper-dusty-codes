@@ -1,5 +1,6 @@
 import { app } from 'hyperapp'
 import { location } from '@hyperapp/router'
+import views from './views'
 import './main.css'
 
 const state = {
@@ -10,8 +11,6 @@ const actions = {
   location: location.actions
 }
 
-const view = (state, actions) => ''
-
-const main = app(state, actions, view, document.body)
+const main = app(state, actions, views, document.getElementById('app'))
 
 const unsubscribe = location.subscribe(main.location)
