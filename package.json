@@ -34,7 +34,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "dev:server": "fastify start --log-level=info --watch --ignore-watch='static src node_modules .gitignore' --pretty-logs index.js",
+    "dev:server": "fastify start --log-level=info --watch --ignore-watch='static src .git node_modules .gitignore' --pretty-logs index.js",
     "dev": "npm-run-all --parallel watch dev:server"
   },
   "repository": {
