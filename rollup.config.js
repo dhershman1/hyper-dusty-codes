@@ -7,13 +7,11 @@ import resolve from 'rollup-plugin-node-resolve'
 
 const prod = process.env.NODE_ENV === 'production'
 
-console.log(prod)
-
 export default {
   input: 'src/app.js',
   plugins: [
     postcss(),
-    resolve({ jsnext: true }),
+    resolve(),
     buble({ jsx: 'h' }),
     // commonjs(),
     buble(),
@@ -21,7 +19,7 @@ export default {
     !prod && livereload('static')
   ],
   watch: {
-    chokidar: true,
+    chokidar: false,
     include: 'src/**',
     clearScreen: false
   },
