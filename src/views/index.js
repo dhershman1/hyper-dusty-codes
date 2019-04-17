@@ -9,7 +9,7 @@ const view = (state, action) => {
   return div({ class: 'wrapper' }, [
     header([
       nav({ class: 'nav' }, [
-        h1({ class: 'nav__title' }, 'Hyper Dusty Codes'),
+        h1({ class: 'nav__title' }, 'Dusty Codes'),
         ul({ class: 'nav__list' }, [
           li({ class: 'nav__item' }, [
             Link({ class: 'nav__link', to: '/' }, 'Home')
