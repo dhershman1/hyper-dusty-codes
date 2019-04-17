@@ -142,7 +142,7 @@ footer {
 }
 
 .animate {
-  animation-duration: 0.3s;
+  animation-duration: 0.7s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
 }

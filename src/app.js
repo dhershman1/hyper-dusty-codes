@@ -14,4 +14,4 @@ const actions = {
 
 const main = app(state, actions, views, document.getElementById('app'))
 
-const unsubscribe = location.subscribe(main.location)
+location.subscribe(main.location)

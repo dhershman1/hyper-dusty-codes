@@ -1,8 +1,7 @@
 import { div, h2 } from '@hyperapp/html'
-import Fade from '../Transitions/Fade'
 
 const Home = (actions, state) => () =>
-  Fade([
+  div({ class: 'animate animate--enter' }, [
     h2({ key: 'home' }, 'Home Page')
   ])
 

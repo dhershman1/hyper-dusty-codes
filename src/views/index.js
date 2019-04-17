@@ -12,7 +12,7 @@ const view = (state, action) => {
         h1({ class: 'nav__title' }, 'Hyper Dusty Codes'),
         ul({ class: 'nav__list' }, [
           li({ class: 'nav__item' }, [
-            Link({ class: 'nav__link', to: '/' }, 'Home'),
+            Link({ class: 'nav__link', to: '/' }, 'Home')
           ]),
           li({ class: 'nav__item' }, [
             Link({ class: 'nav__link', to: '/portfolio' }, 'Portfolio')
@@ -20,7 +20,7 @@ const view = (state, action) => {
         ])
       ])
     ]),
-    main({ class: 'animate' }, [
+    main([
       Route({ path: '/', render: Home(action, state) }),
       Route({ path: '/portfolio', render: Portfolio(action, state) })
     ]),

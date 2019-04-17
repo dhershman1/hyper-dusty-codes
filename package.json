@@ -7,7 +7,6 @@
     "@hyperapp/fx": "0.7.0",
     "@hyperapp/html": "1.1.1",
     "@hyperapp/router": "0.7.1",
-    "@hyperapp/transitions": "1.0.2",
     "classcat": "3.2.5",
     "fastify": "2.2.0",
     "fastify-cli": "S1.0.0",
@@ -15,7 +14,7 @@
     "hyperapp": "1.2.9"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
+    "npm-run-all": "4.1.5",
     "rollup": "1.10.0",
     "rollup-plugin-buble": "0.19.6",
     "rollup-plugin-livereload": "1.0.0",
