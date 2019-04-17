@@ -9,11 +9,12 @@
     "@hyperapp/router": "0.7.1",
     "classcat": "3.2.5",
     "fastify": "2.2.0",
-    "fastify-cli": "S1.0.0",
+    "fastify-cli": "1.0.0",
     "fastify-static": "2.4.0",
     "hyperapp": "1.2.9"
   },
   "devDependencies": {
+    "chokidar": "^2.1.5",
     "npm-run-all": "4.1.5",
     "rollup": "1.10.0",
     "rollup-plugin-buble": "0.19.6",

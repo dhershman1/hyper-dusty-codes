@@ -19,8 +19,9 @@ export default {
     !prod && livereload('static')
   ],
   watch: {
-    chokidar: false,
+    chokidar: true,
     include: 'src/**',
+    exclude: 'node_modules/**',
     clearScreen: false
   },
   output: {
