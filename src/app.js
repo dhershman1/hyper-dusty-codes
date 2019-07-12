@@ -1,7 +1,6 @@
 import { app } from 'hyperapp'
 import { location } from '@hyperapp/router'
 import views from './views'
-import './main.css'
 
 const state = {
   location: location.state,

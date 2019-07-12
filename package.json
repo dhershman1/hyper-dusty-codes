@@ -4,25 +4,24 @@
   "description": "A hyperapp version of the dusty codes website",
   "main": "index.js",
   "dependencies": {
-    "@hyperapp/fx": "0.7.0",
+    "hyperapp-fx": "1.0.0",
     "@hyperapp/html": "1.1.1",
-    "@hyperapp/router": "0.7.1",
+    "@hyperapp/router": "0.7.2",
     "classcat": "3.2.5",
-    "fastify": "2.2.0",
-    "fastify-cli": "1.0.0",
-    "fastify-static": "2.4.0",
-    "hyperapp": "1.2.9"
+    "fastify": "2.6.0",
+    "fastify-cli": "1.1.0",
+    "fastify-static": "2.5.0",
+    "hyperapp": "1.2.10"
   },
   "devDependencies": {
-    "chokidar": "^2.1.5",
+    "chokidar": "3.0.2",
     "npm-run-all": "4.1.5",
-    "rollup": "1.10.0",
-    "rollup-plugin-buble": "0.19.6",
-    "rollup-plugin-livereload": "1.0.0",
-    "rollup-plugin-node-resolve": "4.2.3",
-    "rollup-plugin-postcss": "2.0.3",
-    "rollup-plugin-terser": "4.0.4",
-    "standard": "12.0.1"
+    "rollup": "1.16.7",
+    "rollup-plugin-buble": "0.19.8",
+    "rollup-plugin-livereload": "1.0.1",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-terser": "5.1.1",
+    "standard": "13.0.1"
   },
   "standard": {
     "ignore": [

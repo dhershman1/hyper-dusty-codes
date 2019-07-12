@@ -6,16 +6,18 @@
   --light: hsl(225, 14%, 60%); /*Gray-Blue*/
   --disabled: hsl(0, 0%, 69%); /*Silver Chalice*/
   --primary: hsl(336, 13%, 16%); /*Raisin Black*/
-  --primary-bg: hsla(129, 10%, 74%, 0.801); /*Ash Gray*/
+  --primary-bg: rgba(210, 219, 226, 0.575);
   --secondary: hsl(225, 14%, 60%); /*Gray-Blue*/
-  --secondary-bg: hsla(225, 14%, 60%, 0.801); /*Gray-Blue*/
+  --secondary-bg: rgba(220, 124, 124, 0.8); /*Gray-Blue*/
+  --font: rgba(0, 0, 0, 0.65);
+  --secondary-font: rgb(220, 124, 124);
 }
 /* END Variables */
 
 /* Setup */
 html {
-  height: 100%;
   color: var(--dark);
+  height: 100%;
 }
 
 body {
@@ -27,7 +29,13 @@ body {
 
 #app {
   height: 100%;
+  background-color: var(--primary-bg);
 }
+
+a {
+  color: var(--secondary-font);
+}
+
 /* END Setup */
 
 /* Helpers */
@@ -38,7 +46,7 @@ body {
 
 /* Define Grid */
 .wrapper {
-  height: 100%;
+  min-height: 100%;
   display: grid;
   font-size: 14px;
   grid-template-areas: 'header header'
@@ -59,14 +67,12 @@ main {
   padding: 0 2rem;
   height: 100%;
   border-top: 1px solid var(--accent);
-  background-color: var(--primary-bg);
 }
 
 footer {
   grid-area: foot;
   padding: 0.5rem 1rem;
-  border-top: 1px solid var(--accent);
-  background-color: var(--secondary-bg);
+  text-align: center;
 }
 /* END Define Grid */
 
