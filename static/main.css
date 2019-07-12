@@ -7,10 +7,10 @@
   --disabled: hsl(0, 0%, 69%); /*Silver Chalice*/
   --primary: hsl(336, 13%, 16%); /*Raisin Black*/
   --primary-bg: rgba(210, 219, 226, 0.575);
-  --secondary: hsl(225, 14%, 60%); /*Gray-Blue*/
-  --secondary-bg: rgba(220, 124, 124, 0.8); /*Gray-Blue*/
+  --secondary-bg: rgba(220, 124, 124, 0.8);
+  --content-bg: rgba(255, 255, 255, 0.651);
   --font: rgba(0, 0, 0, 0.65);
-  --secondary-font: rgb(220, 124, 124);
+  --accent: rgb(220, 124, 124);
 }
 /* END Variables */
 
@@ -33,7 +33,7 @@ body {
 }
 
 a {
-  color: var(--secondary-font);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -64,20 +64,21 @@ a {
 header {
   grid-area: header;
   width: 100%;
-  background-color: var(--primary-bg);
 }
 
 main {
   grid-area: main;
   padding: 0 2rem;
   height: 100%;
-  border-top: 1px solid var(--accent);
+  border-top: 1px solid var(--font);
+  background-color: var(--content-bg);
 }
 
 footer {
   grid-area: foot;
   padding: 0.5rem 1rem;
   text-align: center;
+  background-color: var(--content-bg);
 }
 /* END Define Grid */
 
