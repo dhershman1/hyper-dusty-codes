@@ -34,6 +34,7 @@ body {
 
 a {
   color: var(--secondary-font);
+  text-decoration: none;
 }
 
 /* END Setup */
@@ -47,6 +48,8 @@ a {
 /* Define Grid */
 .wrapper {
   min-height: 100%;
+  width: 70%;
+  margin: auto;
   display: grid;
   font-size: 14px;
   grid-template-areas: 'header header'
@@ -54,6 +57,8 @@ a {
                        'foot foot';
   grid-template-rows: 64px 1fr auto;
   grid-template-columns: 10% 90%;
+  border-left: 1px solid var(--font);
+  border-right: 1px solid var(--font);
 }
 
 header {
@@ -119,6 +124,10 @@ footer {
   white-space: nowrap;
   font-size: 18px;
   transition: all 0.5s ease;
+}
+
+.nav__link--active {
+  background-color: var(--primary-bg);
 }
 
 .nav__link:hover {

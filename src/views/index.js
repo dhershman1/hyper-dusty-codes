@@ -6,16 +6,24 @@ import Home from './Home'
 import Portfolio from './Portfolio'
 
 const view = (state, action) => {
+  function isActive (to) {
+    if (state.location.pathname === to) {
+      return 'nav__link nav__link--active'
+    }
+
+    return 'nav__link'
+  }
+
   return div({ class: 'wrapper' }, [
     header([
       nav({ class: 'nav' }, [
         h1({ class: 'nav__title' }, 'Dusty Codes'),
         ul({ class: 'nav__list' }, [
           li({ class: 'nav__item' }, [
-            Link({ class: 'nav__link', to: '/' }, 'Home')
+            Link({ class: isActive('/'), to: '/' }, 'Home')
           ]),
           li({ class: 'nav__item' }, [
-            Link({ class: 'nav__link', to: '/portfolio' }, 'Portfolio')
+            Link({ class: isActive('/portfolio'), to: '/portfolio' }, 'Portfolio')
           ])
         ])
       ])
